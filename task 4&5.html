@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+                color: blue;
+                font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1><span class="highlight">Student</span> Registration</h1>
+        <h3>Personal <span class="highlight">Information</span></h3>
+    </center>
+    
+    <center>
+    <form>
+        <table border="5" cellpading=""10 cellspacing="10">
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+            
+                <td>
+                 <center>
+                    <input type="text" id="name" name="name">
+                </center>
+                </td>
+            
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <center><input type="email" id="email" name="email"></center></td>
+            </tr>
+            <tr>
+                <td><label for="place">Place:</label></td>
+                <td><center><input type="text" id="place" name="place"></center></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><center><input type="password" id="password" name="password"></center></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><center><input type="date" id="dob" name="dob"></center></td>
+            </tr>
+            <tr>
+                <td><label for="time">Time:</label></td>
+                <td><center><input type="time" id="time" name="time"></center></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>Location</h3></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="country">Select Country:</label></td>
+                <td> <center>
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="uk">UK</option>
+                        <option value="usa">USA</option>
+                        <option value="pakistan">Pakistan</option>
+                    </select>
+                </center>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><center><textarea id="address" name="address" rows="4" cols="30"></textarea></center></td>
+            </tr>
+            <tr>
+                <td><h3>Preferences</h3></td>
+            
+            
+                <td colspan="2">
+                    <input type="checkbox" id="sports" name="preferences" value="Sports">
+                    <label for="sports">Sports</label><br>
+                    <input type="checkbox" id="music" name="preferences" value="Music">
+                    <label for="music">Music</label><br>
+                    <input type="checkbox" id="reading" name="preferences" value="Reading">
+                    <label for="reading">Reading</label><br>
+                    <input type="checkbox" id="traveling" name="preferences" value="Travel">
+                    <label for="traveling">Travel</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="experience">Experience Level (1-100):</label></td>
+                <td><input type="range" id="experience" name="experience" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Upload Photo:</label></td>
+                <td><input type="file" id="photo" name="photo"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                   <center><input type="submit" value="Submit"></center> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

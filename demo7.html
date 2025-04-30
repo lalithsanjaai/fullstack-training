@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar Switch View</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <input type="radio" name="section" id="show-home" checked>
+  <input type="radio" name="section" id="show-about">
+
+
+  <nav class="navbar">
+    <div class="header">
+      <img src="google-logo-9834 (1).png" alt="logo">
+    </div>
+    <ul class="navbar-list">
+      <li class="navbar-item"><label for="show-home">Home</label></li>
+      <li class="navbar-item"><label for="show-about">About</label></li>
+      <li class="navbar-item dropdown">
+        <a class="dropdown-toggle">Services ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Training</a></li>
+          <li><a href="#">GD</a></li>
+          <li><a href="#">Aptitude</a></li>
+          <li><a href="#">Technical</a></li>
+        </ul>
+      </li>
+      <li class="navbar-item"><a href="#">Address</a></li>
+      <li class="navbar-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="content">
+    <section id="home" class="section">
+      <center>
+        <br>
+        <img src="google-logo-9834 (1).png" alt="logo">
+        <h1>Organize the World’s Information</h1>
+        <input type="search" placeholder="Search here">
+        <marquee behavior="scroll" direction="left" scrollamount="5" >
+            Welcome to Google World! Explore our services..</marquee>
+      </center>
+    </section>
+
+    <section id="about" class="section">
+      <center>
+        <h2>About Us</h2>
+        <img src="image copy 16.png" alt="About us">
+        <p>
+          Google LLC (/ˈɡuːɡəl/) is a multinational corporation in AI, cloud, software, and more.
+          Founded <span class="heilight">September 4, 1998</span> by Larry Page and Sergey Brin.
+          It powers Gmail, YouTube, Android, Chrome, and much more. It’s part of Alphabet Inc.
+        </p>
+      </center>
+      <center>
+        
+      <div id="card">
+        <img src="image copy 13.png">
+        <h3>Teaching</h3>
+        <p>Expert-Led Courses across tech, business, art, and more</p>
+      </div>
+
+      <div id="card">
+        <img src="image copy 12.png">
+        <h3>Solving</h3>
+        <p> Interactive Lessons with quizzes and projects</p>
+      </div>
+
+      <div id="card">
+        <img src="image copy 11.png">
+        <h3>Certifications</h3>
+        <p>Certifications to boost your resume</p>
+      </div>
+      </center>
+
+    </section>
+  </div>
+</body>
+</html>

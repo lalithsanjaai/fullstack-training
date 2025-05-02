@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #result, #result1 {
+      font-weight: bold;
+      margin-left: 8px;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+
+    </style>
+    <script>
+      
+        function validateForm() {
+     
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            if(name == "" || email == "" || phone == ""){
+                alert("Please fill all the fields.");
+                return false;
+            } else {
+                alert("Registration successful!");
+                return true;
+            }
+        }
+
+         function checkEmail() {
+            var email = document.getElementById("email").value;
+            var resultDiv = document.getElementById("result");
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(email)) {
+                resultDiv.innerHTML = "Valid email address.";
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.innerHTML = "Invalid email address.";
+                resultDiv.style.color = "red";
+            }
+        }
+        function checkPhone(){
+            var phone = document.getElementById("phone").value;
+            var resultDiv1 = document.getElementById("result1");
+
+            var phoneRegex = /^\d{10}$/; 
+
+            if (phoneRegex.test(phone)) {
+                resultDiv1.innerHTML = "Valid phone number.";
+                resultDiv1.style.color = "green";
+            } else {
+                resultDiv1.innerHTML = "Invalid phone number.";
+                resultDiv1.style.color = "red";
+            }
+        }
+            
+    </script>
+</head>
+<body>
+    
+        <center>
+          <h2>Register</h2>
+          <p>Join us to explore the world of Google!</p>
+          <form id="content" onsubmit="return validateForm()">
+            name: <input type="text" placeholder="Name" id="name" ><br>
+        
+            email:<input type="email" placeholder="Email" id="email" oninput="checkEmail()"  > <div id="result"></div><br>
+        
+            phone:<input type="tel" placeholder="Phone" id="phone"oninput="checkPhone()" ><div id="result1"></div><br>
+            
+         <input type="submit" value="Register " >
+          </form>
+        </center>
+  
+</body>
+</html>

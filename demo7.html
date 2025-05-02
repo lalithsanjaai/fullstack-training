@@ -10,11 +10,17 @@
   
   <input type="radio" name="section" id="show-home" checked>
   <input type="radio" name="section" id="show-about">
+  <input type="radio" name="section" id="show-register">
+  <input type="radio" name="section" id="show-contact">
+ 
 
 
   <nav class="navbar">
     <div class="header">
       <img src="google-logo-9834 (1).png" alt="logo">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      
     </div>
     <ul class="navbar-list">
       <li class="navbar-item"><label for="show-home">Home</label></li>
@@ -28,7 +34,7 @@
           <li><a href="#">Technical</a></li>
         </ul>
       </li>
-      <li class="navbar-item"><a href="#">Address</a></li>
+      <li class="navbar-item"><label for="show-register">  Register</label></li>
       <li class="navbar-item"><a href="#">Contact</a></li>
     </ul>
   </nav>
@@ -77,6 +83,19 @@
       </div>
       </center>
 
+    </section>
+    <section id="register" class="section">
+      <center>
+        <h2>Register</h2>
+        <img src="" alt="Register">
+        <p>Join us to explore the world of Google!</p>
+        <form action="#">
+         NAME: <input type="text" placeholder="Name" required>
+          EMAIL:<input type="email" placeholder="Email" required>
+          PASSWORD:<input type="password" placeholder="Password" required>
+          <button type="submit">Register</button>
+        </form>
+      </center>
     </section>
   </div>
 </body>
